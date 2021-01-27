@@ -1,0 +1,55 @@
+// ====
+// ==== MIXINS ====
+// ===================================
+
+// ====
+// ==== HEADINGS ====
+// ===================================
+@mixin heading-one {
+  color: $color-white;
+  font-family: $font-family-secondary;
+  font-size: $font-size-h1;
+  line-height: calculaterem(96);
+  letter-spacing: .5rem;
+  text-transform: uppercase;
+}
+
+@mixin heading-two {
+  color: $color-black;
+  font-family: $font-family-primary;
+  font-size: $font-size-h2;
+  line-height: 2rem  /* 32/16 */;
+}
+
+
+// ====
+// ==== COMMON ====
+// ===================================
+
+@mixin paragraph {
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+}
+
+
+// ====
+// ==== BUTTON ====
+// ===================================
+@mixin button($color, $bg) {
+  color: $color;
+  background-color: $bg;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+  width: 100%;
+  padding: 1em 1em .8em 1em;
+
+  &:hover {
+    background-color: darken($bg, 8%);
+    transition: background-color .3s ease;
+  }
+
+  &:active {
+    background-color: darken($bg, 25%);
+  } 
+}

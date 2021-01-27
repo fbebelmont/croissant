@@ -1,0 +1,30 @@
+// ====
+// ==== VARIABLES ====
+// ===================================
+
+// ====
+// ==== COLORS ====
+// ===================================
+$color-primary: #F2B970;
+$color-black: #1A1A1A;
+$color-white: #FFFFFF;
+
+// ====
+// ==== FONTS ====
+// ===================================
+// ---- base
+$base-font-size-value: 16;
+$base-font-size: #{$base-font-size-value}px !default;
+
+// ---- family
+$font-family-primary: 'Khula', sans-serif;
+$font-family-secondary: 'Dorsa', sans-serif;
+
+// ---- size
+$font-size-h1: calculaterem(96);
+$font-size-h2: calculaterem(24);
+
+// ====
+// ==== SPACES ====
+// ===================================
+$space: 60px;

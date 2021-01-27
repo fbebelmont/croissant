@@ -1,0 +1,101 @@
+// ====
+// ==== HOME ====
+// ==== INTRODUCTION ====
+// ===================================
+.home__content,
+.introduction__content,
+.list__content,
+.profile__content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.home__content,
+.introduction__content {
+  justify-content: center;
+}
+
+.home__title,
+.introduction__title,
+.list__title,
+.profile__title {
+  @include heading-one;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.home__paragraph,
+.introduction__paragraph,
+.list__paragraph {
+  color: $color-white;
+  font-family: $font-family-primary;
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 0 3rem 3rem 3rem;
+} 
+
+.home__button,
+.introduction__button,
+.list__button {
+  display: block;
+}
+
+.profile__view {
+  background-color: $color-white;
+  border-radius: 7px;
+  padding: 8px;
+  margin: 40px 0 10px;
+}
+
+.profile__avatar {
+  position: relative;
+  margin-top: -78px;
+  width: 156px;
+  height: 156px;
+  margin: -72px auto 20px auto;
+
+  &__img {
+    display: block;
+    max-width: 100%;
+    border-radius: 50%;
+  }
+
+  &__border {
+    position: absolute;
+    width: 156px;
+    height: 156px;
+    border: 6px solid #000;
+    border-radius: 50%;
+    opacity: 0.1;
+    top: 0;
+    left: 0;
+  }
+}
+
+.profile__name {
+  display: block;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.profile__cluster {
+  display: block;
+  font-size: 0.875rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.profile__birthday {
+  display: block;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.profile__description {
+  display: block;
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 20px;
+}

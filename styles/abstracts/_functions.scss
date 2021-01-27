@@ -1,0 +1,11 @@
+// ====
+// ==== FUNCTIONS ====
+// ===================================
+
+//
+// CALCULATE REM FROM PX
+// ======================================================
+@function calculaterem($size) {
+  $remSize: $size / $base-font-size-value;
+  @return #{$remSize}rem;
+}
