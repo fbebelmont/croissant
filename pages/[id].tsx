@@ -29,7 +29,8 @@ export default function UserId({name, lastname, avatar, cluster, birthday, descr
 
 export const getStaticProps: GetStaticProps<UserDetailsProps> = async ( ctx ) => {
 
-  const id = ctx.params.id as string;
+  const params = ctx.params || {};
+  const id = params.id
   //Open DB
   const db = await sqlite.open('./users.sqlite');
   const user = await db.get('SELECT * FROM user where id = ?', id);

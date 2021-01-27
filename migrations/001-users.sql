@@ -15,7 +15,7 @@ INSERT INTO User (name, lastname, avatar, cluster, birthday, description) values
 INSERT INTO User (name, lastname, avatar, cluster, birthday, description) values ('Martin','Hosly','/images/avatars/martin-hosly.jpg','Performance','45','Je suis dans un cluster qui a été dissout.');
 INSERT INTO User (name, lastname, avatar, cluster, birthday, description) values ('Paul','Parker','/images/avatars/paul-parker.jpg','Proximis','28','Mon secret ? Je veux configurer plus de landing pages en prod.');
 INSERT INTO User (name, lastname, avatar, cluster, birthday, description) values ('Sarah','Brown','/images/avatars/sarah-brown.jpg','Magento','34','Coucou, je suis fan de ce que tu fais !');
-INSERT INTO User (name, lastname, avatar, cluster, birthday, description) values ('Victor','Shypca','/images/avatars/victor-Shypca.jpg','Salesforce','25','Il est ou le Php ? Oh wait...');
+INSERT INTO User (name, lastname, avatar, cluster, birthday, description) values ('Victor','Shypca','/images/avatars/victor-shypca.jpg','Salesforce','25','Il est ou le Php ? Oh wait...');
 
 -- Down
 DROP TABLE User
